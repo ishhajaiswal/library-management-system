@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(226, 226, 194);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border-bottom: 5px solid white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    font-size: large;
+}
+
+.small-navbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.big-navbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.big-navbar a, .small-navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+.big-navbar a:hover, .small-navbar a:hover {
+    text-decoration: underline;
+}
+
+
+
+.contactbox {
+    margin-top: 150px; 
+    max-width: 500px; 
+    padding: 20px 40px 20px 20px; 
+    border: 2px solid #ddd; 
+    border-radius: 8px; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding-right: 25px;
+}
+
+
+.contactbox h3 {
+    color: #333; 
+    margin-bottom: 10px; 
+    text-align: center; 
+}
+
+.contactbox hr {
+    border-top: 1px solid #ddd; 
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px; 
+}
+
+.form-group label {
+    display: block; /* so that the label is above the input field*/
+    font-weight: bold; 
+    color: #555; 
+}
+
+.form-group input {
+    width: calc(100% - 10px); 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    outline: none; 
+    margin-top: 5px; 
+    transition: border-color 0.3s; 
+}
+
+.form-group input:focus {
+    border-color: #007bff; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2); 
+}
+
+.message {
+    height: 100px; 
+    resize: none; 
+}
+
+.submit , .reset{
+    cursor: pointer;
+}
+
+.submit:hover, .reset:hover {
+    background-color: black; 
+    color: white; 
+    transition: background-color 0.3s ease; 
+}

@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(226, 226, 194);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border-bottom: 5px solid white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    font-size: large;
+    margin-bottom: 200px;
+}
+
+.small-navbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.big-navbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.big-navbar a, .small-navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+.big-navbar a:hover, .small-navbar a:hover {
+    text-decoration: underline;
+}
+
+
+.container {
+    margin-top: 1100px;
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+h4 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 98%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input:focus {
+    border-color: #007bff;
+}
+
+button.submit {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.submit:hover {
+    background-color: rgb(229, 145, 159);
+}
+
+.displaybooks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.book-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.book-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.book-card h5 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.book-card p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.book-card button.submit {
+    padding: 8px 12px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book-card button.submit:hover {
+    background-color: #218838;
+}
+
+.text-center {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.view {
+    margin-left: 350px;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 40px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.view:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+.view:active {
+    background-color: pink;
+}
+
+

@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(226, 226, 194);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border-bottom: 5px solid white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    font-size: large;
+}
+
+.small-navbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.big-navbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.big-navbar a, .small-navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+.big-navbar a:hover, .small-navbar a:hover {
+    text-decoration: underline;
+}
+
+
+.account-container {
+    width: 600px;
+    height: 400px;
+    margin-top: 120px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(128, 128, 128, 0.3);
+    text-align: center;
+    align-items: center;
+}
+
+.account-container h1 {
+    color: black;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.account-container p {
+    font-size: 18px;
+    color: gray;
+}
+
+.links {
+    margin-top: 30px;
+}
+
+.links a {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.links a:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+.links a:active {
+    background-color: pink;
+}
+
